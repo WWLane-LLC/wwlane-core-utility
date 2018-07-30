@@ -52,7 +52,7 @@ export class ObjectPropertyService {
 		return response;
 	}
 
-	retrievePropertyByName(object: Object, propertyName: String): Object {
+	retrievePropertyByName(object: Object, propertyName: string): Object | Object[] {
 		let response = object;
 
 		if (propertyName !== undefined) {
@@ -64,7 +64,7 @@ export class ObjectPropertyService {
 		return response;
 	}
 
-	parseValueUsingObject(object: Object, value: String): Object {
+	parseValueUsingObject(object: Object, value: string): Object {
 		let response: Object;
 
 		// if (value instanceof FunctionCall) {
@@ -76,7 +76,7 @@ export class ObjectPropertyService {
 		return response;
 	}
 
-	parseValuesUsingObject(object: Object, values: String[]): Object[] {
+	parseValuesUsingObject(object: Object, values: string[]): Object[] {
 		const response: Object[] = [];
 		for (let x = 0; x < values.length; x++) {
 			response.push(this.parseValueUsingObject(object, values[x]));
