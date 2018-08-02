@@ -1,4 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
+
+import { ObjectPropertyService } from './object-property/object-property.service';
 
 @NgModule({
 	imports: [
@@ -8,4 +10,13 @@ import { NgModule } from '@angular/core';
 	exports: [
 	]
 })
-export class WwLaneCoreUtilityModule { }
+export class WwLaneCoreUtilityModule {
+	static forRoot(): ModuleWithProviders {
+		return {
+			ngModule: WwLaneCoreUtilityModule,
+			providers: [
+				ObjectPropertyService
+			]
+		};
+	}
+}
