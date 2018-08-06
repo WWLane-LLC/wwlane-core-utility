@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 
-import { WwLaneCoreUtilityModule } from '../wwlane-core-utility.module';
+import { WwLaneCoreUtilityModule } from '../../wwlane-core-utility.module';
 
 @Injectable({
-	providedIn: WwLaneCoreUtilityModule
+	providedIn: 'root'
 })
 export class ObjectPropertyService {
 

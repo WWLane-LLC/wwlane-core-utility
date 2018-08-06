@@ -3,4 +3,4 @@
  */
 
 export * from './lib/wwlane-core-utility.module';
-export * from './lib/object-property/object-property.service';
+export * from './lib/object/property/object-property.service';
