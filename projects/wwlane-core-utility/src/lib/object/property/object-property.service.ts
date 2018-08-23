@@ -1,12 +1,9 @@
 import { Injectable } from '@angular/core';
 
-import { WwLaneCoreUtilityModule } from '../../wwlane-core-utility.module';
-
 @Injectable({
 	providedIn: 'root'
 })
 export class ObjectPropertyService {
-
 	constructor() { }
 
 	private retrievePropertyByPropertyNameChain(object: Object, propertyNames: string[]): Object {
